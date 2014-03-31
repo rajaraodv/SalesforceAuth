@@ -44,7 +44,7 @@ static NSString * const OAuthRedirectURI        = @"http://localhost:3000/oauth/
     [SFAccountManager setScopes:[NSSet setWithObjects:@"api", nil]];
     
     // Logout and login host change handlers.
-   // [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logoutInitiated:) name:kSFUserLogoutNotification object:[SFAuthenticationManager sharedManager]];
+    [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logoutInitiated:) name:kSFUserLogoutNotification object:[SFAuthenticationManager sharedManager]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginHostChanged:) name:kSFLoginHostChangedNotification object:[SFAuthenticationManager sharedManager]];
     
     __block SFViewController *vc = self;
@@ -80,12 +80,12 @@ static NSString * const OAuthRedirectURI        = @"http://localhost:3000/oauth/
     }
 }
 
-//
-//- (void)logoutInitiated:(NSNotification *)notification
-//{
-//
-//    [[SFAuthenticationManager sharedManager] loginWithCompletion:self.initialLoginSuccessBlock failure:self.initialLoginFailureBlock];
-//}
+
+- (void)logoutInitiated:(NSNotification *)notification
+{
+
+    [[SFAuthenticationManager sharedManager] loginWithCompletion:self.initialLoginSuccessBlock failure:self.initialLoginFailureBlock];
+}
 
 - (void)loginHostChanged:(NSNotification *)notification
 {

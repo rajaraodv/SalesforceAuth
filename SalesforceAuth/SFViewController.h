@@ -10,4 +10,10 @@
 
 @interface SFViewController : UIViewController
 
+- (IBAction)loginToSalesforceBtn:(id)sender;
+- (IBAction)logoutFromSalesforceBtn:(id)sender;
+@property (strong, nonatomic) IBOutlet UIButton *loginToSalesforceBtnOutlet;
+@property (strong, nonatomic) IBOutlet UIButton *logoutFromSalesforceBtnOutlet;
+@property (strong, nonatomic) IBOutlet UILabel *username;
+
 @end

@@ -43,7 +43,7 @@ static NSString * const OAuthRedirectURI        = @"http://localhost:3000/oauth/
     [SFAccountManager setRedirectUri:OAuthRedirectURI];
     [SFAccountManager setScopes:[NSSet setWithObjects:@"api", nil]];
     
-    // Logout and login host change handlers.
+//    // Logout and login host change handlers.
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(logoutInitiated:) name:kSFUserLogoutNotification object:[SFAuthenticationManager sharedManager]];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(loginHostChanged:) name:kSFLoginHostChangedNotification object:[SFAuthenticationManager sharedManager]];
     
@@ -84,7 +84,8 @@ static NSString * const OAuthRedirectURI        = @"http://localhost:3000/oauth/
 - (void)logoutInitiated:(NSNotification *)notification
 {
 
-    [[SFAuthenticationManager sharedManager] loginWithCompletion:self.initialLoginSuccessBlock failure:self.initialLoginFailureBlock];
+    [self showOrHideButtons];
+    
 }
 
 - (void)loginHostChanged:(NSNotification *)notification
@@ -106,5 +107,6 @@ static NSString * const OAuthRedirectURI        = @"http://localhost:3000/oauth/
 
 - (IBAction)logoutFromSalesforceBtn:(id)sender {
     [[SFAuthenticationManager sharedManager] logout];
+   
 }
 @end

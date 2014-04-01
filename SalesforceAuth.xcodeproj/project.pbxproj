@@ -963,6 +963,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SalesforceAuth/SalesforceAuth-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/SalesforceAuth/SalesforceOAuth/**",
+				);
 				INFOPLIST_FILE = "SalesforceAuth/SalesforceAuth-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",
@@ -992,6 +997,11 @@
 				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "SalesforceAuth/SalesforceAuth-Prefix.pch";
+				HEADER_SEARCH_PATHS = (
+					"$(inherited)",
+					/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include,
+					"$(SRCROOT)/SalesforceAuth/SalesforceOAuth/**",
+				);
 				INFOPLIST_FILE = "SalesforceAuth/SalesforceAuth-Info.plist";
 				LIBRARY_SEARCH_PATHS = (
 					"$(inherited)",

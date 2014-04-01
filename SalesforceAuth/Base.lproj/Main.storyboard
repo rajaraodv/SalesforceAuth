@@ -24,7 +24,6 @@
                                 </state>
                                 <connections>
                                     <action selector="loginToSalesforceBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="q4p-xc-PHl"/>
-                                    <action selector="logoutFromSalesforceBtn:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Mzb-1y-GFQ"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x9q-7O-zkh">

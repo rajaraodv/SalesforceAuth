@@ -16,8 +16,6 @@
 	<string>1.0</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
-	<key>SFDCOAuthLoginHost</key>
-	<string>raoraja-developer-edition.na15.force.com/Conference</string>
 	<key>CFBundleVersion</key>
 	<string>1</string>
 </dict>

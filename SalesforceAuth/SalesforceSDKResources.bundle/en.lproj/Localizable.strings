@@ -22,32 +22,33 @@
  WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
  */
 
-#import <Foundation/Foundation.h>
+// Passcode view controller
 
-/**
- The type of authentication being attempted, in a given OAuth coordinator cycle.
- */
-typedef enum {
-    SFOAuthTypeUnknown = 0,
-    SFOAuthTypeUserAgent,
-    SFOAuthTypeRefresh
-} SFOAuthType;
+"nextScreenNavButtonTitle" = "Next";
+"prevScreenNavButtonTitle" = "Back";
+"createPasscodeNavTitle" = "Create Passcode";
+"confirmPasscodeNavTitle" = "Confirm Passcode";
+"verifyPasscodeNavTitle" = "Verify Passcode";
+"passcodeCreateInstructions" = "For increased security, please create a passcode that you will use to access Salesforce when the session has timed out due to inactivity.";
+"passcodeConfirmInstructions" = "Confirm the passcode you just entered.";
+"passcodeVerifyInstructions" = "Please enter your security passcode.";
+"minPasscodeLengthError" = "Your passcode must be at least %d characters long.";
+"passcodesDoNotMatchError" = "Passcodes do not match!";
+"passcodeInvalidError" = "The passcode you entered was invalid.";
+"forgotPasscodeTitle" = "Forgot Passcode?";
+"logoutAlertViewTitle" = "Are you sure you want to logout?";
+"logoutNo" = "No";
+"logoutYes" = "Yes";
 
-/**
- Data class containing members denoting state information for an OAuth coordinator authentication
- cycle.
- */
-@interface SFOAuthInfo : NSObject
+// OAuth flow
 
-/**
- The type of authentication being performed.
- */
-@property (nonatomic, readonly, assign) SFOAuthType authType;
+"authAlertErrorTitle" = "Salesforce Error";
+"authAlertOkButton" = "OK";
+"authAlertRetryButton" = "Retry";
+"authAlertConnectionErrorFormatString" = "Can't connect to salesforce: %@";
+"authAlertVersionMismatchError" = "Your app has been updated, and you will need to log in again to continue using the app.";
 
-/**
- Creates a new instance with the given auth type.
- @param authType The type of authentication being performed.
- */
-- (id)initWithAuthType:(SFOAuthType)authType;
+// Hybrid bootstrap
 
-@end
+"hybridBootstrapDeviceOffline" = "Your device is offline. Can't continue.";
+

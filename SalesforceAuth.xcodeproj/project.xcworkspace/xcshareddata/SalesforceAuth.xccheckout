@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>7DCB7241-55DB-4C89-BB04-93AF93CB628F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>SalesforceAuth</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>E4031B3A-BF16-4F61-86D4-494A9F9E8155</key>
+		<string>ssh://github.com/rajaraodv/SalesforceAuth.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>SalesforceAuth.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>6003A626-EB0E-4335-B8E3-23CB8F1DFE3B</key>
+		<string>../../SalesforceAuth</string>
+		<key>E4031B3A-BF16-4F61-86D4-494A9F9E8155</key>
+		<string>../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>ssh://github.com/rajaraodv/SalesforceAuth.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>E4031B3A-BF16-4F61-86D4-494A9F9E8155</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>E4031B3A-BF16-4F61-86D4-494A9F9E8155</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SalesforceAuth</string>
+		</dict>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>6003A626-EB0E-4335-B8E3-23CB8F1DFE3B</string>
+			<key>IDESourceControlWCCName</key>
+			<string>SalesforceAuth</string>
+		</dict>
+	</array>
+</dict>
+</plist>
